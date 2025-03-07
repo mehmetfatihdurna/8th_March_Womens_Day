@@ -15,6 +15,8 @@ screen.bgcolor("#DCDACA")
 
 set_zoom(0.9)
 
+
+
 def draw_filled_shape(coords, color):
     """
     Turtle ile verilen koordinatları birleştirerek şekil çizen ve içini verilen renkle boyayan fonksiyon.
@@ -93,9 +95,6 @@ time.sleep(5)
 for i in cordinates:
     draw_filled_shape(i[:3],i[3])
 
-
-turtle.penup()
-turtle.goto(0,0)
-turtle.pendown()
-
 turtle.done()  # Çizimi bitir
+
+time.sleep(5)
